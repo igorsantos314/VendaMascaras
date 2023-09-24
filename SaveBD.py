@@ -9,7 +9,7 @@ class saveBD:
         db_name = 'DataBase.db'
 
         #acessar base de dados
-        self.connection = sqlite3.connect(f"{path}/VendaMascaras/{db_name}")
+        self.connection = sqlite3.connect(f"{path}/{db_name}")
         self.cur = self.connection.cursor()
 
     # --------------- PEGAR O ID ATUAL ---------------

@@ -8,7 +8,7 @@ from time import sleep
 
 from SaveBD import *
 
-class interfaceMascaras:
+class InterfaceMascaras:
 
     def __init__(self):
         
@@ -1003,4 +1003,4 @@ class interfaceMascaras:
 
         windowTamanhoMascara.mainloop()
 
-a = interfaceMascaras()
+InterfaceMascaras()
