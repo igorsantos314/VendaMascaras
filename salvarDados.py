@@ -1,10 +1,10 @@
 
-class salveData:
+class SaveData:
 
     def __init__(self):
         
         self.caminhoDefault = "/home/igor/Área de Trabalho/Códigos Ellen/"
-        self.caminhos = ["{}Ellen/ELLEN.txt".format(caminhoDefault), "{}Claudete/CLAUDETE.txt".format(caminhoDefault), "{}Hiolanda/HIOLANDA.txt".format(caminhoDefault)]
+        self.caminhos = ["{}Ellen/ELLEN.txt".format(self.caminhoDefault), "{}Claudete/CLAUDETE.txt".format(self.caminhoDefault), "{}Hiolanda/HIOLANDA.txt".format(self.caminhoDefault)]
     
     #caminho padrao
     def getCaminhoDefault(self):
@@ -40,7 +40,7 @@ class salveData:
         with open(self.getVendedor(idVendedor), 'a') as arquivo:
             arquivo.write('{}\n'.format(dataString))
 
-a = salveData()
+a = SaveData()
 a.salvarDadosVenda(0, '123')
 a.salvarDadosVenda(0, '456')
 a.acessarVendas(0)

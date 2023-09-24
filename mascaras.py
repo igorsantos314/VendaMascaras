@@ -53,9 +53,3 @@ class mask:
                 self.getDesc(),
                 self.getStatus(),
                 self.getEntrega()]
-
-
-igor = mask('17-06', 'Igor', 10, [['Preta','Bico de Pato', 'G','Elastico Normal'], ['Bolinha','Bico de Pato', 'P','Elastico Normal'], ['Xadrez','Bico de Pato', 'P','Elastico Grande']], 'Pg', 'ENTREGE')
-
-
-

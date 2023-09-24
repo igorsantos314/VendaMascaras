@@ -1,20 +1,15 @@
 import sqlite3
-from os import popen
+import os
 
 class saveBD:
 
     def __init__(self):
-        #pegar caminho automatico
-        pipe = popen('pwd')
-        caminho = pipe.read()
-        pipe.close()
-
         #novo caminho
-        newCaminho = '{}/DataBase.db'.format(caminho.replace('\n', ''))
+        path = os.getcwd() 
+        db_name = 'DataBase.db'
 
         #acessar base de dados
-        self.connection = sqlite3.connect(newCaminho)
-
+        self.connection = sqlite3.connect(f"{path}/VendaMascaras/{db_name}")
         self.cur = self.connection.cursor()
 
     # --------------- PEGAR O ID ATUAL ---------------
