@@ -1,4 +1,4 @@
-## Sistema para gerenciamento de venda de mascaras
+# Sistema para gerenciamento de venda de mascaras
 
 Esse pequeno sistema tem o objetivo de ajudar na contabilidade de venda de mascaras para uma pequena empresa.
 
@@ -11,11 +11,14 @@ Percebi uma problema quando tive contato com algumas pessoas que vendiam o masca
 ## Depedências
 
 Windows 10 ou superior
+
 Python 3.0 ou superior
 
 ## Executar
 
+```bash
 python InterfaceVendasMascaras.py
+```
 
 ## Dados
 
@@ -25,7 +28,7 @@ Alguns dados já viram como padrão, para fins teste. Porém você poderá limpa
 
 Igor Santos.
 
-# Licença
+## Licença
 
 Este projeto é licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
 
